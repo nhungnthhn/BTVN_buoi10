@@ -6,7 +6,7 @@ function login() {
         if (password == 'TheMaster'){
             alert('Hello')
         }
-        else if (password == '') {
+        else if (password == null) {
             alert('Quên mk ah bạn mình')
         }
         else alert('Sai mk rồi bạn eii')
