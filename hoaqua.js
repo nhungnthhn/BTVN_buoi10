@@ -22,5 +22,6 @@ function hoaqua() {
         case '7':
         document.getElementById("result").innerHTML = "Giá măng cụt là: 50000VND/kg";
         break;
+        // default document.getElementById("result").innerHTML = "Không có sản phẩm này";
     }
 }
