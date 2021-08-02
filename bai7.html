@@ -14,9 +14,12 @@
             let a = '';
             if (i % 3 == 0) a += 'Fizz'
             if (i % 5 == 0) a += 'Buzz';
-            console.log(a || i);
+            console.log(a || i); 
 
-            // tại sao console.log (i || a thì ko ra kq)
+            // tại sao console.log (i || a) thì ko ra kq)
+            //  khi console.log (i || a) thì mt sẽ hiểu là: Nếu vế trước không có giá trị thì nó sẽ in giá trị của vế sau
+            //  ở đây i luôn có giá trị nên khi console.log (i || a) -> sẽ ko bao giờ ra được a
+            // nhưng khi đặt ngược lại console.log (i || a) thì sẽ đúng -> vì a ko phải lúc nào cũng có giá trị
         }
     </script>
 </body>
