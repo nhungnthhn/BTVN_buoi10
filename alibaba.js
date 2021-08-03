@@ -1,12 +1,9 @@
 function check() {
     debugger
-    let password = "Vung oi mo ra";
-    let a;
-    do {
-        
-        a = document.getElementById("password").value;
-    }
-    while (a !== password){
-        alert("Chào mừng");
+    let pass = '123456';
+    let password = document.getElementById("password").value;
+    while (password !== pass){
+        alert("Sai mk zòiiiiiiiii");
+        document.getElementById("password")
     } 
 }
