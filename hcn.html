@@ -8,9 +8,24 @@
 </head>
 <body>
     <script>
-    let i, j;
+    let i = 0;
+    let j = 0;
     let height = prompt("nhập số: ");
-    let width = prompt("nhập số: ")
+    let width = prompt("nhập số: ");
+    let diem = "*";
+    while (i <= height) {
+        while (j <= width) {
+            if(i ==0 || j ==0 || i == height || j == width) {
+                document.write(diem);
+            } else {
+                document.write("1" + "2");
+            }
+            i ++;   
+        }
+        document.write ("<br>")
+        i = 0;
+        j ++;
+    }
     </script>
 
 </body>

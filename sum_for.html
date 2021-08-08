@@ -10,14 +10,20 @@
     <script>
         let num1 = +prompt("Nhập số đầu tiên:");
         let num2 = +prompt("Nhập số thứ 2:");
-        for (i = num1; i <= num2; i++) {
-            let output = '';
-            if(i % 3 == 0) output += 'Fizz'
-            if(i % 5 == 0) output += 'Buzz'
-            // ...
-            
-            console.log(output || i);
-}
+        let sum = 0;
+        if (num1 < num2) {
+            for(i = num1; i <= num2; i++) {
+            sum += i
+        } 
+        document.write(sum)
+        }
+        else  {
+            for(i = num2; i <= num1; i++) {
+            sum += i
+        } 
+        document.write(sum)
+        }
+        
     </script>
 </body>
 </html>
