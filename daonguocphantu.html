@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mang1 = [1, 4, 6, 2, 8, -2, 10]
+        let frist = 0;
+        let last = mang1.length - 1;
+        while (frist < last) {
+            let b = mang1[frist];
+            mang1[frist] = mang1[last];
+            mang1[last] = b;
+            frist ++;
+            last --;
+        }
+        document.write(mang1)
+    </script>
+</body>
+</html>

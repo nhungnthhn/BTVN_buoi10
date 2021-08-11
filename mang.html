@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for in: chỉ in ra được chỉ số của các phần tử trong mảng
+        // for of: in ra được giá trị của phần tử trong mảng luôn
+
+
+        // let number = [1, 2, 3, 1, 6, 8];
+        // let index = 0;
+        // let max = number[0];
+        // for (let i = 1; i < number.length; i++) {
+        //     if (max < number[i]) {
+        //         max = number[i];
+        //         index = i;
+        //     } 
+        // }
+        // document.write("Số lớn nhất là: "  + max + "vị trí là: " + index);
+
+
+
+        // tìm 1 số có trong dãy số hay không
+        let num = prompt("Hãy nhập số muốn tìm kiếm")
+        let number = [1, 2, 3, 1, 6, 8];
+        let flag = false
+        for (i = 0; i < number.length; i++) {
+            if (num == number[i]) {
+                flag = true;
+                break;
+            }
+        }
+
+        if(flag) {
+            document.write("Có tồn tại")
+        } else {
+            document.write("Không tồn tại")
+        }
+    </script>
+</body>
+</html>
