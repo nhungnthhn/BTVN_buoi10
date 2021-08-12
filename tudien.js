@@ -36,10 +36,10 @@ function check() {
                 break;
             }
         }
-            if (flag) {
-                document.getElementById("result").innerHTML=result;
-            }
-            else {
-                alert("Không có từ này")
-            }
+    if (flag) {
+        document.getElementById("result").innerHTML=result;
+    }
+    else {
+        alert("Không có từ này")
+    }
 }
